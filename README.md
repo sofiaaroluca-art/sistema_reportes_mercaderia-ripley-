@@ -1,6 +1,181 @@
-# Sistema de Reportes de Garita + Módulo Inteligente ML
+# 🚛 Sistema de Reportes de Garita + Módulo Inteligente ML
 
-Proyecto académico basado en los mockups de UX para un sistema de gestión de flujo de mercadería y reportes. Incluye:
+Sistema web desarrollado para la **gestión del flujo de mercadería y generación de reportes operativos**, incorporando un módulo de **Machine Learning 🤖** para identificar posibles situaciones de riesgo operativo.
+
+## ✨ Características principales
+
+* 🔐 **Autenticación de usuarios**
+* 📊 **Dashboard** para consulta y gestión de reportes
+* 📝 **Registro y validación** de nuevos reportes
+* 👁️ **Visualización de reportes** en modo solo lectura
+* 🚚 Gestión de **camiones y categorías**
+* 👥 Gestión de **usuarios**
+* 🗃️ Registro de **reportes y detalles de reporte**
+* 💾 Base de datos con **SQLite** y soporte opcional para **MySQL**
+* 🤖 Módulo de **Machine Learning**
+* 🌳 Modelo basado en **Árbol de Decisión**
+* ⚠️ Clasificación de mercadería en:
+
+  * 🟢 **Normal**
+  * 🔴 **Riesgo Operativo**
+* 📈 **Análisis Exploratorio de Datos (EDA)**
+* 📊 Métricas de evaluación y **matriz de confusión**
+* 🔎 Análisis de **importancia de variables**
+
+## 🛠️ Tecnologías utilizadas
+
+| Tecnología                       | Uso                               |
+| -------------------------------- | --------------------------------- |
+| 🐍 **Python**                    | Lenguaje principal                |
+| 🌐 **Flask**                     | Framework backend                 |
+| 🤖 **Scikit-learn**              | Machine Learning                  |
+| 🐼 **Pandas**                    | Procesamiento y análisis de datos |
+| 🎨 **HTML5 / CSS3 / JavaScript** | Interfaz web                      |
+| 🗄️ **SQLite / MySQL**           | Base de datos                     |
+| 📦 **Bootstrap**                 | Diseño de interfaz                |
+
+## 🤖 Módulo de Machine Learning
+
+El sistema incorpora un modelo de **Árbol de Decisión** orientado a la identificación de riesgo operativo en la gestión de mercadería.
+
+### 📌 Variables utilizadas
+
+* 🏷️ Categoría
+* 🚚 Camión
+* 📦 Cantidad total
+* 🧾 Número de productos
+* 📊 Stock estimado
+* ⚠️ Stock mínimo
+* 📈 Demanda semanal
+* 🚛 Unidades en tránsito
+* ⏱️ Tiempo de reposición
+* 📅 Días sin reposición
+* 🚨 Incidencias
+* 🔄 Rotación del producto
+
+### 📊 Análisis del modelo
+
+El módulo permite visualizar:
+
+* 📈 Métricas de rendimiento
+* 🎯 Resultados de clasificación
+* 🔲 Matriz de confusión
+* 🔎 Importancia de variables
+* 📊 Gráficos del análisis exploratorio de datos (EDA)
+
+## 🚀 Instalación y ejecución
+
+### 1️⃣ Crear entorno virtual
+
+```bash
+python -m venv venv
+```
+
+### 2️⃣ Activar el entorno
+
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+Si PowerShell bloquea la ejecución:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\venv\Scripts\Activate.ps1
+```
+
+### 3️⃣ Instalar dependencias
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ Ejecutar el sistema
+
+```bash
+python run.py
+```
+
+🌐 **Acceso local:**
+
+```text
+http://127.0.0.1:5000
+```
+
+## 🗄️ Base de datos
+
+El proyecto utiliza **SQLite** por defecto, permitiendo ejecutar el sistema sin necesidad de instalar un servidor de base de datos adicional.
+
+📁 Ubicación:
+
+```text
+instance/sistema_reportes.db
+```
+
+También se incluye un script para **MySQL**:
+
+```text
+database/schema_mysql.sql
+```
+
+## 📂 Estructura del proyecto
+
+```text
+sistema_reportes_ripley/
+│
+├── 🚀 run.py
+├── ⚙️ config.py
+├── 📦 requirements.txt
+├── 📖 README.md
+├── 🔧 .env.example
+│
+├── 🗄️ database/
+│   └── schema_mysql.sql
+│
+├── 💻 app/
+│   ├── models/
+│   │   ├── usuario.py
+│   │   ├── camion.py
+│   │   ├── categoria.py
+│   │   └── reporte.py
+│   │
+│   ├── controllers/
+│   │   ├── auth.py
+│   │   ├── reportes.py
+│   │   └── ml.py
+│   │
+│   ├── services/
+│   │   └── ml_service.py
+│   │
+│   ├── templates/
+│   │   ├── base.html
+│   │   ├── login.html
+│   │   ├── dashboard.html
+│   │   ├── nuevo_reporte.html
+│   │   ├── ver_reporte.html
+│   │   └── ml_dashboard.html
+│   │
+│   └── static/
+│       ├── css/
+│       ├── js/
+│       └── img/
+│
+└── 📚 docs/
+    └── rubrica_avance_3.md
+```
+
+## 🎯 Objetivo del proyecto
+
+Desarrollar una solución web que permita **centralizar la gestión de reportes de garita y el flujo de mercadería**, complementándola con técnicas de **Machine Learning** para apoyar la identificación temprana de posibles riesgos operativos.
+
+---
+
+### 🎓 Proyecto académico
+
+Desarrollado como propuesta tecnológica para la **gestión logística y análisis inteligente de mercadería**.
+
+⭐ Si este proyecto te resulta interesante, ¡no dudes en explorar el código!
+
 
 - Login visual.
 
@@ -11,157 +186,11 @@ Proyecto académico basado en los mockups de UX para un sistema de gestión de f
 - Registro de nuevo reporte.
 <img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/a076dc99-aa52-4c61-a13e-af9ed1e06fe9" />
 - Módulo inteligente de riesgo operativo
-  <img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/caec4a54-fbcf-4646-8d73-72965249cd85" />
-
+<img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/caec4a54-fbcf-4646-8d73-72965249cd85" />
 - Módulo de Machine Learning para predecir riesgo operativo.
-  <img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/ffd6d356-ae1b-4417-9d3b-b46b4f5cd044" />
-
+<img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/ffd6d356-ae1b-4417-9d3b-b46b4f5cd044" />
 - EDA, gráficos, métricas, matriz de confusión e importancia de variables.
-  <img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/230ff6a7-fb6b-4b76-83f5-284c16be39da" />
+<img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/230ff6a7-fb6b-4b76-83f5-284c16be39da" />
 - Algoritmos No Supervisados
 <img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/23a8366d-e5f2-4e72-8c36-efbcced744ea" />
 
-## 1. Requisitos
-
-Tener instalado Python 3.10 o superior.
-
-## 2. Crear entorno virtual
-
-En Visual Studio Code, abrir la carpeta del proyecto y ejecutar:
-
-```bash
-python -m venv venv
-```
-
-Activar entorno virtual en Windows PowerShell:
-
-```bash
-.\venv\Scripts\Activate.ps1
-```
-
-Si PowerShell bloquea la activación, ejecutar:
-
-```bash
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\venv\Scripts\Activate.ps1
-```
-
-## 3. Instalar librerías
-
-```bash
-pip install -r requirements.txt
-```
-
-## 4. Ejecutar proyecto
-
-```bash
-python run.py
-```
-
-Abrir en el navegador:
-
-```text
-http://127.0.0.1:5000
-```
-
-## 5. Credenciales de prueba
-
-```text
-Usuario: jose.alguay@ripley.pe
-Contraseña: 123456
-```
-
-También puedes usar:
-
-```text
-Usuario: admin
-Contraseña: admin123
-```
-
-## 6. Base de datos
-
-Por defecto el sistema usa SQLite para que corra rápido sin instalar MySQL. El archivo se crea automáticamente en:
-
-```text
-instance/sistema_reportes.db
-```
-
-El script MySQL solicitado está en:
-
-```text
-database/schema_mysql.sql
-```
-
-Para usar MySQL:
-
-1. Crear la base ejecutando `database/schema_mysql.sql` en MySQL.
-2. Copiar `.env.example` como `.env`.
-3. Cambiar `DB_ENGINE=mysql` y completar usuario, clave, host y base de datos.
-4. Ejecutar nuevamente `python run.py`.
-
-## 7. Módulo Machine Learning
-
-Ruta dentro del sistema:
-
-```text
-/ml/dashboard
-```
-
-El módulo entrena un Árbol de Decisión para clasificar mercadería en:
-
-- Normal
-- Riesgo operativo
-
-Variables usadas:
-
-- Categoría
-- Camión
-- Cantidad total
-- Número de productos
-- Stock estimado
-- Stock mínimo
-- Demanda semanal
-- Unidades en tránsito
-- Tiempo de reposición
-- Días sin reposición
-- Incidencias
-- Rotación del producto
-
-## 8. Estructura del proyecto
-
-```text
-sistema_reportes_ripley/
-├── run.py
-├── config.py
-├── requirements.txt
-├── README.md
-├── .env.example
-├── database/
-│   └── schema_mysql.sql
-├── app/
-│   ├── __init__.py
-│   ├── models/
-│   │   ├── usuario.py
-│   │   ├── camion.py
-│   │   ├── categoria.py
-│   │   └── reporte.py
-│   ├── controllers/
-│   │   ├── auth.py
-│   │   ├── reportes.py
-│   │   └── ml.py
-│   ├── services/
-│   │   └── ml_service.py
-│   ├── templates/
-│   │   ├── base.html
-│   │   ├── login.html
-│   │   ├── dashboard.html
-│   │   ├── nuevo_reporte.html
-│   │   ├── ver_reporte.html
-│   │   └── ml_dashboard.html
-│   └── static/
-│       ├── css/style.css
-│       ├── js/main.js
-│       └── img/
-└── docs/
-    └── rubrica_avance_3.md
-```
