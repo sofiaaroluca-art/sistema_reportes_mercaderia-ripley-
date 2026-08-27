@@ -3,6 +3,15 @@
 Proyecto académico basado en los mockups de UX para un sistema de gestión de flujo de mercadería y reportes. Incluye:
 
 - Login visual.
+
+<img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/74cb84e0-21f2-4dc6-bd8a-22615ef757f6" />
+
+
+
+
+
+
+
 - Dashboard de reportes.
 - Registro de nuevo reporte.
 - Validación previa de datos obligatorios.
