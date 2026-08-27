@@ -170,11 +170,6 @@ Desarrollar una solución web que permita **centralizar la gestión de reportes 
 
 ---
 
-### 🎓 Proyecto académico
-
-Desarrollado como propuesta tecnológica para la **gestión logística y análisis inteligente de mercadería**.
-
-⭐ Si este proyecto te resulta interesante, ¡no dudes en explorar el código!
 
 
 - Login visual.
@@ -193,4 +188,10 @@ Desarrollado como propuesta tecnológica para la **gestión logística y anális
 <img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/230ff6a7-fb6b-4b76-83f5-284c16be39da" />
 - Algoritmos No Supervisados
 <img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/23a8366d-e5f2-4e72-8c36-efbcced744ea" />
+
+### 🎓 Proyecto académico
+
+Desarrollado como propuesta tecnológica para la **gestión logística y análisis inteligente de mercadería**.
+
+⭐ Si este proyecto te resulta interesante, ¡no dudes en explorar el código!
 
