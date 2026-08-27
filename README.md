@@ -10,12 +10,16 @@ Proyecto académico basado en los mockups de UX para un sistema de gestión de f
 <img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/86ec3f75-6c64-42f3-b862-9287158acdb6" />
 - Registro de nuevo reporte.
 <img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/a076dc99-aa52-4c61-a13e-af9ed1e06fe9" />
-- Validación previa de datos obligatorios.
-- Vista final de reporte en modo solo lectura.
-- Base de datos con usuarios, camiones, categorías, reportes y detalle de reporte.
+- Módulo inteligente de riesgo operativo
+  <img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/caec4a54-fbcf-4646-8d73-72965249cd85" />
+
 - Módulo de Machine Learning para predecir riesgo operativo.
+  <img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/ffd6d356-ae1b-4417-9d3b-b46b4f5cd044" />
 
 - EDA, gráficos, métricas, matriz de confusión e importancia de variables.
+  <img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/230ff6a7-fb6b-4b76-83f5-284c16be39da" />
+- Algoritmos No Supervisados
+<img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/23a8366d-e5f2-4e72-8c36-efbcced744ea" />
 
 ## 1. Requisitos
 
