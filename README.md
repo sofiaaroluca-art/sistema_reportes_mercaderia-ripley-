@@ -1,4 +1,4 @@
-# 🚛 Sistema de Reportes de Garita + Módulo Inteligente ML
+# 🚛 Sistema de Reportes + Módulo Inteligente ML
 
 Sistema web desarrollado para la **gestión del flujo de mercadería y generación de reportes operativos**, incorporando un módulo de **Machine Learning 🤖** para identificar posibles situaciones de riesgo operativo.
 
